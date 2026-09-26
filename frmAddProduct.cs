@@ -86,14 +86,14 @@ namespace Inventory
                 _Category = cbCategory.Text;
                 _MfgDate = dtPickerMfgDate.Value.ToString("yyyy-MM-dd");
                 _ExpDate = dtPickerExpDate.Value.ToString("yyyy-MM-dd");
-                _Description = richTxtDescription.Text;
-                _Quantity = Quantity(txtQuantity.Text);
                 _SellPrice = SellingPrice(txtSellPrice.Text);
-                
+                _Quantity = Quantity(txtQuantity.Text);
+                _Description = richTxtDescription.Text;
 
                 showProductList.Add(new ProductClass(_ProductName, _Category, _MfgDate, _ExpDate, _SellPrice, _Quantity, _Description));
 
-                gridViewProductList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+               
+                gridViewProductList.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
                 gridViewProductList.DataSource = showProductList;
 
                 ResetFields();

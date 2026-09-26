@@ -4,65 +4,105 @@ using System.Text;
 
 namespace Inventory
 {
+
     internal class ProductClass
     {
-            private int _Quantity;
-            private double _SellingPrice;
-            private string _ProductName, _Category, _ManufacturingDate, _ExpirationDate, _Description;
+        private int _Quantity;
+        private double _SellingPrice;
+        private string _ProductName, _Category, _ManufacturingDate, _ExpirationDate, _Description;
 
-            public ProductClass(string ProductName, string Category, string MfgDate, string ExpDate, double Price, 
-                int Quantity, string Description)
+        public ProductClass(string ProductName, string Category, string MfgDate, string ExpDate,
+        double Price, int Quantity, string Description)
+        {
+            this._Quantity = Quantity;
+            this._SellingPrice = Price;
+            this._ProductName = ProductName;
+            this._Category = Category;
+            this._ManufacturingDate = MfgDate;
+            this._ExpirationDate = ExpDate;
+            this._Description = Description;
+        }
+        public string productName
+        {
+            get
             {
-                this._Quantity = Quantity;
-                this._SellingPrice = Price;
-                this._ProductName = ProductName;
-                this._Category = Category;
-                this._ManufacturingDate = MfgDate;
-                this._ExpirationDate = ExpDate;
-                this._Description = Description;
+                return this._ProductName;
             }
-
-            public string productName
+            set
             {
-                get { return this._ProductName; }
-                set { this._ProductName = value; }
+                this._ProductName = value;
             }
+        }
 
-            public string category
+        public string category
+        {
+            get
             {
-                get { return this._Category; }
-                set { this._Category = value; }
+                return this._Category;
             }
-
-            public string manufacturingDate
+            set
             {
-                get { return this._ManufacturingDate; }
-                set { this._ManufacturingDate = value; }
-            }
-
-            public string expirationDate
-            {
-                get { return this._ExpirationDate; }
-                set { this._ExpirationDate = value; }
-            }
-
-            public string description
-            {
-                get { return this._Description; }
-                set { this._Description = value; }
-            }
-
-            public int quantity
-            {
-                get { return this._Quantity; }
-                set { this._Quantity = value; }
-            }
-
-            public double sellingPrice
-            {
-                get { return this._SellingPrice; }
-                set { this._SellingPrice = value; }
+                this._Category = value;
             }
 
         }
+        public string manufacturingDate
+        {
+            get
+            {
+                return this._ManufacturingDate;
+            }
+            set
+            {
+                this._ManufacturingDate = value;
+            }
+        }
+        public string expirationDate
+        {
+            get
+            {
+                return this._ExpirationDate;
+            }
+            set
+            {
+                this._ExpirationDate = value;
+            }
+        }
+
+        public string description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this._Description = value;
+            }
+        }
+
+        public int quantity
+        {
+            get
+            {
+                return this._Quantity;
+            }
+            set
+            {
+                this._Quantity = value;
+            }
+
+        }
+        public double sellingPrice
+        {
+            get
+            {
+                return this._SellingPrice;
+            }
+            set
+            {
+                this._SellingPrice = value;
+            }
+        }
     }
+}

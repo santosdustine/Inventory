@@ -97,7 +97,7 @@
             // 
             // richTxtDescription
             // 
-            richTxtDescription.Location = new Point(419, 101);
+            richTxtDescription.Location = new Point(465, 90);
             richTxtDescription.Name = "richTxtDescription";
             richTxtDescription.Size = new Size(314, 185);
             richTxtDescription.TabIndex = 8;
@@ -108,7 +108,7 @@
             btnAddProduct.BackColor = Color.LightGray;
             btnAddProduct.FlatAppearance.BorderSize = 0;
             btnAddProduct.FlatStyle = FlatStyle.Flat;
-            btnAddProduct.Location = new Point(619, 297);
+            btnAddProduct.Location = new Point(665, 286);
             btnAddProduct.Name = "btnAddProduct";
             btnAddProduct.Size = new Size(100, 32);
             btnAddProduct.TabIndex = 9;
@@ -121,7 +121,7 @@
             gridViewProductList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             gridViewProductList.Location = new Point(24, 359);
             gridViewProductList.Name = "gridViewProductList";
-            gridViewProductList.Size = new Size(704, 158);
+            gridViewProductList.Size = new Size(755, 158);
             gridViewProductList.TabIndex = 10;
             // 
             // lblCategory
@@ -203,7 +203,7 @@
             // 
             lblDescription.AutoSize = true;
             lblDescription.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblDescription.Location = new Point(419, 74);
+            lblDescription.Location = new Point(465, 63);
             lblDescription.Name = "lblDescription";
             lblDescription.Size = new Size(89, 21);
             lblDescription.TabIndex = 19;
@@ -213,7 +213,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(740, 529);
+            ClientSize = new Size(791, 529);
             Controls.Add(lblDescription);
             Controls.Add(lblAddProduct);
             Controls.Add(label1);
@@ -240,6 +240,7 @@
             ((System.ComponentModel.ISupportInitialize)gridViewProductList).EndInit();
             ResumeLayout(false);
             PerformLayout();
+
         }
 
         #endregion
